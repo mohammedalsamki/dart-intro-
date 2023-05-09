@@ -65,6 +65,7 @@ else{
   }
 
   print(devideTwoNumbersDouble(a: 6, b: 25, d: 5, e: 6));
+  print(devideTwoNumbersDouble(a: 20, b: 10, d: 5, e: 6));
   // print(devideTwoNumbersDouble(a:6, b:25));
   // devideTwoNumbers();
 
