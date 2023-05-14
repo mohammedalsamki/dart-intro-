@@ -30,12 +30,21 @@ class Employee{
   String? experience;
   int _salary=300;
   int? bonus;
-  int? _totalSalary;
+  int?  _totalSalary ;
   // add _salary and bouns to the totalSalary
 
   // getter and setter
   // getter
-  int? totlSalary => totalSalary;
+  int? get totalSalary => _totalSalary;
+
+  // setter
+
+  int? totlSalarysum(){
+    _totalSalary = _salary + bonus!;
+    return _totalSalary;
+  }
+
+  set totalSalary(int? totalSalary)=> _totalSalary  = totalSalary ;
 
 }
 void main(){
@@ -52,11 +61,13 @@ void main(){
   employee1.rol = 1;
   employee1.experience = "2 years";
   employee1.bonus = 100;
-  employee1.totalSalary = employee1._salary! + employee1.bonus!;
   print(employee1.name);
   print(employee1.rol);
   print(employee1.experience);
+  employee1.totlSalarysum();
+  print(employee1.bonus);
   print(employee1.totalSalary);
+
 
   
 }
