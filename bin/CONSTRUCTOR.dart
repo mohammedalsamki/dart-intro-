@@ -7,7 +7,6 @@ Student student1 = Student.namedConstructor('ali', 20, 1);
 Animals animal1 = Animals('cat', 2, 'white');
 print(animal1.name);
 print(animal1.age);
-
 print(animal1.color);
 
 
